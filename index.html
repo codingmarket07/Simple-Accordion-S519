@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple Accordion</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  			$(".accordion_tab").click(function(){
+  				$(".accordion_tab").each(function(){
+				  $(this).removeClass("active");
+				});
+				$(this).addClass("active");
+				$(this).next().addClass("active");
+			});
+		});
+	</script>
+</head>
+<body>
+
+<div class="wrapper">	
+	<div class="title">Simple Accordion</div>
+
+	<div class="accordion_wrapper">	
+		<div class="accordion_item">
+			<div class="accordion_tab active">Music
+				<div class="arrow">
+					<img src="arrow.png" alt="arrow">
+				</div>
+			</div>
+			<div class="accordion_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati asperiores, et, odit explicabo nesciunt temporibus sit inventore sapiente vitae a ipsum dicta deserunt repellat aut!</p>
+			</div>
+		</div>
+		<div class="accordion_item">
+			<div class="accordion_tab">Sports
+				<div class="arrow">
+					<img src="arrow.png" alt="arrow">
+				</div>
+			</div>
+			<div class="accordion_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati asperiores, et, odit explicabo nesciunt temporibus sit inventore sapiente vitae a ipsum dicta deserunt repellat aut!</p>
+			</div>
+		</div>
+		<div class="accordion_item">
+			<div class="accordion_tab">Books
+				<div class="arrow">
+					<img src="arrow.png" alt="arrow">
+				</div>
+			</div>
+			<div class="accordion_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati asperiores, et, odit explicabo nesciunt temporibus sit inventore sapiente vitae a ipsum dicta deserunt repellat aut!</p>
+			</div>
+		</div>
+		<div class="accordion_item">
+			<div class="accordion_tab">Movies
+				<div class="arrow">
+					<img src="arrow.png" alt="arrow">
+				</div>
+			</div>
+			<div class="accordion_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati asperiores, et, odit explicabo nesciunt temporibus sit inventore sapiente vitae a ipsum dicta deserunt repellat aut!</p>
+			</div>
+		</div>
+		<div class="accordion_item">
+			<div class="accordion_tab">Nature
+				<div class="arrow">
+					<img src="arrow.png" alt="arrow">
+				</div>
+			</div>
+			<div class="accordion_content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati asperiores, et, odit explicabo nesciunt temporibus sit inventore sapiente vitae a ipsum dicta deserunt repellat aut!</p>
+			</div>
+		</div>
+	</div>
+</div>	
+	
+
+
+</body>
+</html>
